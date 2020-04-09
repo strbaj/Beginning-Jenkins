@@ -2,7 +2,7 @@ node {
     printMessage("Pipeline Start")
 
     stage("Fetch Source Code") {
-        git "https://github.com/strbaj/ActivityA"
+        git "https://github.com/strbaj/Beginning-Jenkins.git"
     }
 
     dir('Lesson5/ActivityA') {
