@@ -10,11 +10,11 @@ node {
             sh 'apk add make'
             sh 'apk add python'
             sh 'which make'
-            sh 'make install'
+            sh '/usr/bin/make install'
         }
 
         stage("Run Tests") {
-            sh 'make jenkins_test'
+            sh '/usr/bin/make jenkins_test'
         }
 
         stage("Deploy") {
